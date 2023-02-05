@@ -1,3 +1,41 @@
+/*parallax custom styles*/
+
+main.parallax {
+  perspective-origin: 100%; /*webkit based browsers don't correctly calculate the effective width of an element once transformed into 3D space and scaled up, so this rule fixes that bug*/
+  
+  /*border: 2px solid blue;*/
+  height: 100vh;
+  max-height: 100%;
+  overflow-x: hidden;
+  perspective: 1px;
+  perspective-origin: center top;
+  transform-style: preserve-3d;
+ 
+}
+
+/*parallax image styling*/
+header {
+  width: 100vw;
+  height: 70vh;
+  background-image: url('/img/reading.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  vertical-align: top;
+  transform-origin: center top;
+  transform: translateZ(-1px) scale(2);
+}
+
+/*parallax text below image styling*/
+section {
+  min-height: 40vh;
+  transform: translateZ(0);
+  padding: 10px 0;
+  background-color: #241e20;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+} */
 
 
 /*home page cards styling*/
