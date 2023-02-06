@@ -17,16 +17,60 @@ p {
   justify-content: space-between;
 }
 
+/* Fade In Header text */
 
-/*home page cards styling*/
-#home-cards .btn{
-  background-color: #241e20;
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
-/*bottom of home section styling*/
-.mid-container.home-bottom {
-    background-color: #241e20;
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+
 
 /*default template styles below*/
 
@@ -44,6 +88,8 @@ p {
 
 .container{
 	width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 .text{
@@ -56,6 +102,14 @@ p {
 	opacity: 0;
 	animation: slide-in-anim 1.5s ease-out forwards;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 @keyframes slide-in-anim {
 	20% {
@@ -82,25 +136,12 @@ p {
 }
 
 
-
-
-
-
 /* Container holding the image and the text */
 .img-container {
   position: relative;
   text-align: center;
   color: black;
 }
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 
 .opacity
 {
